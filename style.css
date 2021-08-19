@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.app{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:3px 7px 4px;
+    background-color: rgba(78, 74, 136, 0.719);
+}
+
+h1{
+    margin: 30px 0 10px 0;
+}
+
+p{
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+}
+
+.pads{
+    display: flex;
+}
+
+.pads > div{
+    flex: 1;
+    width: 50px;
+    height: 60px;
+}
+
+.pad1{
+    background-color: red;
+}
+.pad2{
+    background-color: yellow;
+}
+.pad3{
+    background-color: green;
+}
+.pad4{
+    background-color: blue;
+}
+.pad5{
+    background-color: blueviolet;
+}
+.pad6{
+    background-color: goldenrod;
+}
+
+
+@keyframes jump{
+    0%{
+        bottom : 0%;
+        left: 20%;
+    }
+    20%{
+        bottom : 50%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 80%;
+    }
+    100%{
+        bottom : 0%;
+        left: 80%;
+    }
+}
+
+
+.visual > div{
+    z-index: -1;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    bottom: 0%;
+}
+
+@media screen and (min-width:990px){
+    
+p{
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}
+.visual > div{
+    height: 30px;
+    width: 30px;
+    bottom: 0%;
+}
+}
+
+@media screen and (min-width:1300px){
+    
+    p{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .visual > div{
+        height: 30px;
+        width: 30px;
+        bottom: 0%;
+    }
+
+    .pads > div{
+        flex: 1;
+        width:50px;
+        height: 90px;
+    }
+    
+    }
